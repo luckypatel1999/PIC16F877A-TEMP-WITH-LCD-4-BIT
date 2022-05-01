@@ -1,0 +1,203 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"12 C:\Users\LEO\MPLABXProjects\ADC TEMP (LM 35) WITH LCD.X\ADC TEMP LCD.c
+[v _Lcd_cmd Lcd_cmd `(v  1 e 1 0 ]
+"31
+[v _Lcd_data Lcd_data `(v  1 e 1 0 ]
+"51
+[v _Lcd_initial Lcd_initial `(v  1 e 1 0 ]
+"60
+[v _Lcd_string Lcd_string `(v  1 e 1 0 ]
+"68
+[v _adc_init adc_init `(v  1 e 1 0 ]
+"73
+[v _adc_read adc_read `(ui  1 e 2 0 ]
+"79
+[v _main main `(i  1 e 2 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"338
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1150
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1157
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1323
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1497
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2220
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2227
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2507
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @250 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"79 C:\Users\LEO\MPLABXProjects\ADC TEMP (LM 35) WITH LCD.X\ADC TEMP LCD.c
+[v _main main `(i  1 e 2 0 ]
+{
+"82
+[v main@ar ar `[5]i  1 a 10 33 ]
+"81
+[v main@temp temp `ui  1 a 2 45 ]
+[v main@i i `ui  1 a 2 43 ]
+"105
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"528
+[v sprintf@val val `ui  1 a 2 9 ]
+"499
+[v sprintf@c c `c  1 a 1 12 ]
+"506
+[v sprintf@prec prec `c  1 a 1 8 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 7 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 11 ]
+"1541
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"73 C:\Users\LEO\MPLABXProjects\ADC TEMP (LM 35) WITH LCD.X\ADC TEMP LCD.c
+[v _adc_read adc_read `(ui  1 e 2 0 ]
+{
+"78
+} 0
+"68
+[v _adc_init adc_init `(v  1 e 1 0 ]
+{
+"72
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 25 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 29 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 24 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 16 ]
+"73
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 11 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 15 ]
+[v ___ftdiv@exp exp `uc  1 a 1 14 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 10 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 0 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 3 ]
+"86
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"60 C:\Users\LEO\MPLABXProjects\ADC TEMP (LM 35) WITH LCD.X\ADC TEMP LCD.c
+[v _Lcd_string Lcd_string `(v  1 e 1 0 ]
+{
+[v Lcd_string@ptr ptr `*.26uc  1 p 2 3 ]
+"66
+} 0
+"31
+[v _Lcd_data Lcd_data `(v  1 e 1 0 ]
+{
+[v Lcd_data@d d `uc  1 a 1 wreg ]
+[v Lcd_data@d d `uc  1 a 1 wreg ]
+"33
+[v Lcd_data@d d `uc  1 a 1 2 ]
+"50
+} 0
+"51
+[v _Lcd_initial Lcd_initial `(v  1 e 1 0 ]
+{
+"59
+} 0
+"12
+[v _Lcd_cmd Lcd_cmd `(v  1 e 1 0 ]
+{
+[v Lcd_cmd@c c `uc  1 a 1 wreg ]
+[v Lcd_cmd@c c `uc  1 a 1 wreg ]
+"14
+[v Lcd_cmd@c c `uc  1 a 1 2 ]
+"30
+} 0
